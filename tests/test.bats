@@ -26,6 +26,6 @@ teardown() {
   ddev restart
   # Do something here to verify functioning extra service
   # For extra credit, use a real CMS with actual config.
-  ddev exec "curl -s chrome:4444/status" |  grep -q '\"ready\": true'
+  ddev exec "curl -s chrome:4444/st1atus" |  grep -q '\"ready\": true'
 }
 
