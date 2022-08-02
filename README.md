@@ -4,7 +4,6 @@
 
 This repository allows you to quickly add [selenium standalone chrome](https://github.com/SeleniumHQ/docker-selenium) to a [Ddev](https://ddev.readthedocs.io) project.
 
-
 ## Installation
 
 1. `ddev get thunder/ddev-selenium-chrome`
