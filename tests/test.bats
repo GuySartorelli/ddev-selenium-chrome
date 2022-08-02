@@ -26,15 +26,6 @@ teardown() {
   ddev restart
   # Do something here to verify functioning extra service
   # For extra credit, use a real CMS with actual config.
-  ddev exec "curl -s chrome:4444/st1atus" |  grep -q '\"ready\": true'
+  ddev exec "curl -s chrome:4444/status" |  grep -q '\"ready\": true'
 }
 
-@test "install from release" {
-  set -eu -o pipefail
-  cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
-  echo "# ddev get thunder/ddev-selenium-chrome with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
-  ddev get thunder/ddev-selenium-chrome
-  ddev restart >/dev/null
-  # Do something useful here that verifies the add-on
-  ddev exec "curl -s chrome:4444/st1atus" |  grep -q '\"ready\": true'
-}
