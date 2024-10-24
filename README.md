@@ -6,8 +6,23 @@ This repository allows you to quickly add [selenium standalone chrome](https://g
 
 ## Installation
 
-1. `ddev get thunder/ddev-selenium-chrome`
-2. `ddev restart`
+For DDEV v1.23.5 or above run
+
+```sh
+ddev add-on get thunder/ddev-selenium-chrome
+```
+
+For earlier versions of DDEV run
+
+```sh
+ddev get thunder/ddev-selenium-chrome
+```
+
+Then restart your project
+
+```sh
+ddev restart
+```
 
 ## Explanation
 
